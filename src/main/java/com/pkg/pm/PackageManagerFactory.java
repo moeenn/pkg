@@ -8,7 +8,7 @@ public class PackageManagerFactory {
     public PackageManager getPackageManager() throws Exception {
         String distroName = this.getDistroName();
         switch (distroName) {
-            case "debian":
+            case "debian", "\"ubuntu debian\"":
                 return new DebianPackageManager();
 
             default:
